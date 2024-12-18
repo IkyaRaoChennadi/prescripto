@@ -8,7 +8,7 @@ const AdminContextProvider = (props) => {
     const [doctors,setDoctors]=useState([])
     const [appointments,setAppointments]=useState([])
     const [dashData,setDashData]=useState(false)
-    const backendurl = https://prescripto-1-opmj.onrender.com;
+    const backendurl = 'https://prescripto-1-opmj.onrender.com';
     const getAllDoctors =async()=>{
         try{
             const{data} = await axios.post(backendurl + '/api/admin/all-doctors',{},{headers: { aToken}})
