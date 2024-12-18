@@ -6,8 +6,8 @@ export const AppContext=createContext()
 const AppContextProvider =(props)=>{
 
 
-    const currencySymbol ='$'
-    const backendurl=https://prescripto-1-opmj.onrender.com
+    const currencySymbol ='$';
+    const backendurl='https://prescripto-1-opmj.onrender.com';
     const [doctors,setDoctors]=useState([])
     const [token,setToken]=useState(localStorage.getItem('token')?localStorage.getItem('token'):false)
     const [userData,setUserData]=useState(false)
