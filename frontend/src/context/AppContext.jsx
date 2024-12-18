@@ -7,7 +7,7 @@ const AppContextProvider =(props)=>{
 
 
     const currencySymbol ='$'
-    const backendurl=import.meta.env.VITE_BACKEND_URL
+    const backendurl=https://prescripto-1-opmj.onrender.com
     const [doctors,setDoctors]=useState([])
     const [token,setToken]=useState(localStorage.getItem('token')?localStorage.getItem('token'):false)
     const [userData,setUserData]=useState(false)
